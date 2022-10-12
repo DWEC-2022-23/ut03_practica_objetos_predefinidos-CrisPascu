@@ -38,7 +38,7 @@ const botonCircunferencia = document.getElementById("botonCircunferencia");
 const resultadoCircunferencia = document.getElementById("resultadoCircunferencia");
 
 botonCircunferencia.onclick = function(){
-    const resultado = calcularAreaCirculo(radioCircunferencia.value);
+    const resultado = "El área de la circunferencia es " + calcularAreaCirculo(radioCircunferencia.value) + " y su longitud es " + calcularLongitudCirculo(radioCircunferencia.value);
 
     alert(resultado);
     resultadoCircunferencia.innerHTML = resultado;

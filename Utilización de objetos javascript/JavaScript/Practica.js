@@ -104,16 +104,21 @@ function fechaHoraActual(){
 /*Caja de texto de tipo número o promt que nos solicita un radio. Este llamará a la función calcularAreaCirculo(radio) que devuelve el área.  Mostrar en un alert el área de un círculo y la longitud de una circunferencia a partir del radio que introduzca el usuario. Debes mostrarlo con 2 decimales. Comprobar que introduce un número como radio.*/
 function calcularAreaCirculo(radio){
     let area = Math.round(((Math.PI * Math.pow(radio, 2)) + Number.EPSILON) * 100) / 100;
+    return area;
+}
+function calcularLongitudCirculo(radio){
     let longitud = Math.round(((2 * Math.PI * radio) + Number.EPSILON) * 100) /100;
 
-    console.log(area + " y " + longitud)
-    return "El área de la circunferencia es " + area + " y su longitud es " + longitud;
+    // console.log(area + " y " + longitud)
+    return longitud;
 }
 
 /*Mediante cajas de texto o un promt, al pulsar el botón "aleatorio" llame a la función calcularAleatorio(comienzo,fin) que mostrará por pantalla un número aleatorio generado entre los dos números introducidos.*/
 function calcularAleatorio(comienzo, fin){
+    comienzo = Math.ceil(comienzo);
+    fin = Math.floor(fin);
     const numero = Math.floor(Math.random() * (fin - comienzo + 1) + comienzo);
-
+    console.log(numero)
     return numero;
 }
 
