@@ -17,13 +17,13 @@ describe("Generador de números aleatorios", function(){
         });
         it("Tiene que ser igual o inferior al segundo valor", function(){
             for(let i = 0; i < 1000; i++){
-                calcularAleatorio(0, 10).should.not.be.at.greaterThan(10);
+                calcularAleatorio(0, 10).should.not.be.greaterThan(10);
             }
             for(let i = 0; i < 1000; i++){
-                calcularAleatorio(2, 8).should.not.be.at.greaterThan(8);
+                calcularAleatorio(2, 8).should.not.be.greaterThan(8);
             }
             for(let i = 0; i < 1000; i++){
-                calcularAleatorio(5, 40).should.not.be.at.greaterThan(40);
+                calcularAleatorio(5, 40).should.not.be.greaterThan(40);
             }
         });
         
