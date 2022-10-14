@@ -9,9 +9,14 @@ function reyesMagos(fecha){
     const fechaReyesMagos = new Date();
     let tiempoFalta = 0;
 
-    fechaReyesMagos.setFullYear(new Date().getFullYear()+1);
+    fechaReyesMagos.setFullYear(fecha.getFullYear());
     fechaReyesMagos.setDate(6);
     fechaReyesMagos.setMonth(0);
+
+   
+    if((fecha.getDate()>6 && fecha.getMonth()===0) || fecha.getMonth()>0){
+        fechaReyesMagos.setFullYear(fechaReyesMagos.getFullYear()+1);
+    }
 
     tiempoFalta = fechaReyesMagos.getTime() - fecha.getTime();
 
