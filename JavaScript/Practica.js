@@ -14,7 +14,7 @@ function reyesMagos(fecha){
     fechaReyesMagos.setMonth(0);
 
    
-    if((fecha.getDate()>6 && fecha.getMonth()===0) || fecha.getMonth()>0){
+    if((fecha.getDate() > 6 && fecha.getMonth() === 0) || fecha.getMonth() > 0){
         fechaReyesMagos.setFullYear(fechaReyesMagos.getFullYear()+1);
     }
 
@@ -135,19 +135,24 @@ Imprimir cada carácter del String de la caja de texto separado con un guión ca
 Imprimir la cantidad de vocales almacenadas en la caja de texto. contarVocales(cadena)*/
 
 function mitadCar(cadena){
-    return cadena.slice(0, cadena.length / 2);
+    let cadenaSinEspacios= cadena.trim();
+    console.log(cadenaSinEspacios)
+    return cadenaSinEspacios.slice(0, cadenaSinEspacios.length / 2);
 }
 
 function ultimoCaracter(cadena){
-    return cadena.slice(cadena.length - 1, cadena.length);
+    let cadenaSinEspacios = cadena.trim();
+    return cadenaSinEspacios.slice(cadenaSinEspacios.length - 1, cadenaSinEspacios.length);
 }
 
 function cadenaInversa(cadena){
-    return cadena.split("").reverse().join("");
+    let cadenaSinEspacios=cadena.trim();
+    return cadenaSinEspacios.split("").reverse().join("");
 }
 
 function cadenaGuiones(cadena){
-    return cadena.split("").join("-");
+    let cadenaSinEspacios= cadena.trim();
+    return cadenaSinEspacios.split("").join("-");
 }
 
 function contarVocales(cadena){
