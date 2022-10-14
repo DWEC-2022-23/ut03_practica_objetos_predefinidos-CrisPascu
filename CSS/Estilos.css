@@ -1,0 +1,31 @@
+body{
+    margin:3%;
+    background-color: cornsilk;
+}
+
+section, div{
+    margin: 5%;
+}
+
+.separador{
+    border: solid;
+    border-color: darkslategray;
+    width: 100%;
+    margin-right: 10%;
+}
+
+.resultado{
+    width: 500px;
+    border:solid;
+    padding: 2%;
+}
+
+button{
+    background-color: aliceblue;
+    padding: 1%;
+    border-radius: 10%;
+}
+
+#botones{
+    width: 100%;
+}
