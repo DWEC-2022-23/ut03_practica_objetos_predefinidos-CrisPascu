@@ -10,9 +10,7 @@ botonReyesMagos.onclick = function(){
     let resultado = "";
 
 
-    if(tiempoFalta < 0){ //si ya ha pasado el día es porque faltan menos de 0 días
-        resultado = "Los Reyes Magos ya han pasado."
-    } else if(tiempoFalta === 0) { //si no quedan días es porque es hoy
+    if(tiempoFalta === 0) { //si no quedan días es porque es hoy
         resultado = "Hoy son los Reyes Magos."
     } else { //si no muestro el tiempo que falta
         resultado = "Faltan " + tiempoFalta + " días para los Reyes Magos."
