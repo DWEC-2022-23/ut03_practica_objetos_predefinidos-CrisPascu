@@ -19,7 +19,7 @@ function reyesMagos(fecha){
     }
 
     tiempoFalta = fechaReyesMagos.getTime() - fecha.getTime();
-
+console.log(Math.floor(tiempoFalta / 86400000));
     return Math.floor((tiempoFalta / 86400000));
 }
 
