@@ -2,4 +2,4 @@
 
 
 Hecho por Cristina Pascua.
-Ejecutando la web desde github no funcionan los botones, pero el proyecto en sí funciona si lo ejecutas desde visual studio code.
+Ejercicios propuestos y tests unitarios de algunos de ellos. Los dos otros dos aparecen planteados y están en proceso de conseguir que funcionen.
